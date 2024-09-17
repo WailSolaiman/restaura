@@ -25,7 +25,7 @@ const Navbar = () => {
 	}
 
 	return (
-		<nav className='fixed top-4 z-50 flex w-full flex-col items-center justify-center'>
+		<nav className='fixed top-0 md:top-4 z-50 flex w-full flex-col items-center justify-center'>
 			<div
 				className='flex w-full items-center justify-between overflow-y-hidden 
             p-4 backdrop-blur-lg lg:m-2 lg:w-[50rem] lg:rounded-full lg:shadow-lg'>
@@ -48,12 +48,12 @@ const Navbar = () => {
 				</div>
 			</div>
 			{isMobileMenuOpen && (
-				<div className='w-full backdrop-blur-lg lg:hidden'>
+				<div className='w-full backdrop-blur-lg lg:hidden h-screen'>
 					{LINKS?.map((link, index) => (
 						<a
 							key={index}
 							href={`#${link.targetId}`}
-							className='block p-4 uppercase tracking-tighter'
+							className='block p-4 uppercase tracking-tighter text-2xl italic border-b-2 border-dashed text-center'
 							onClick={(e) => handleScroll(e, link.targetId)}>
 							{link.text}
 						</a>
