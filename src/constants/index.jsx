@@ -97,6 +97,8 @@ export const CUSINES = [
 		title: 'Italian',
 		description:
 			'Experience the flavors of Italy with our exquisite Italian cuisine, featuring traditional recipes and contemporary dishes.',
+		description2:
+			'Our Italian cuisine offers a delightful fusion of classic recipes such as creamy risottos, wood-fired pizzas, and hearty meat dishes, alongside contemporary creations that elevate traditional ingredients with a modern twist. Paired with fine Italian wines and finished with decadent desserts like tiramisu or panna cotta, every meal is a culinary journey through Italy’s diverse regions.',
 	},
 	{
 		number: '02.',
@@ -104,6 +106,8 @@ export const CUSINES = [
 		title: 'Japanese',
 		description:
 			'Delight in the art of Japanese culinary excellence, offering a fusion of classic and modern flavors.',
+		description2:
+			'Japanese cuisine is a harmonious blend of tradition and innovation, emphasizing fresh ingredients, precise techniques, and artistic presentation. From the delicate taste of sushi and sashimi to the rich umami of ramen and tempura, each dish showcases the balance of flavor and texture. Experience the simplicity of grilled yakitori or the bold flavors of miso-based dishes. With an emphasis on seasonality and elegance, every meal offers a sensory journey into the heart of Japan’s culinary heritage.',
 	},
 	{
 		number: '03.',
@@ -111,6 +115,8 @@ export const CUSINES = [
 		title: 'Indian',
 		description:
 			"Indulge in the rich and diverse tastes of India, with a menu that celebrates the country's culinary heritage.",
+		description2:
+			'Indian cuisine is a vibrant celebration of bold flavors, aromatic spices, and diverse regional specialties. From the creamy richness of butter chicken and paneer tikka to the fiery heat of vindaloo and fragrant biryanis, each dish offers a unique taste experience. Enjoy classic Indian breads like naan and roti, paired with flavorful curries and chutneys. Rooted in tradition and infused with spices like cumin, coriander, and turmeric, every meal is a flavorful journey through Indian`s culinary history.',
 	},
 ]
 
