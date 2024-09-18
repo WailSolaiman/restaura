@@ -6,6 +6,7 @@ import Mission from './components/Mission'
 import Navbar from './components/Navbar'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
+import Footer from './components/Footer'
 
 function App() {
 	return (
@@ -18,6 +19,7 @@ function App() {
 			<Expertise />
 			<Reviews />
 			<Contact />
+			<Footer />
 		</main>
 	)
 }

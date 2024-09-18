@@ -138,16 +138,16 @@ export const CONTACT = [
 
 export const SOCIAL_MEDIA_LINKS = [
 	{
-		href: 'https://x.com/',
+		href: '#',
 		icon: <FaFacebook fontSize={30} className='hover:opacity-80' />,
 	},
 
 	{
-		href: 'https://x.com/',
+		href: '#',
 		icon: <FaInstagram fontSize={30} className='hover:opacity-80' />,
 	},
 	{
-		href: 'https://x.com/',
+		href: '#',
 		icon: <FaXTwitter fontSize={30} className='hover:opacity-80' />,
 	},
 ]

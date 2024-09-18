@@ -14,7 +14,7 @@ const Navbar = () => {
 	const handleScroll = (event, targetId) => {
 		event.preventDefault()
 		const targetElement = document.getElementById(targetId)
-		if (targetElement) {
+		if (targetElement || targetElement === 'homepage') {
 			const offsetTop = targetElement.offsetTop - 80
 			window.scrollTo({
 				top: offsetTop,
@@ -29,7 +29,11 @@ const Navbar = () => {
 			<div
 				className='flex w-full items-center justify-between overflow-y-hidden 
             p-4 backdrop-blur-lg lg:m-2 lg:w-[50rem] lg:rounded-full lg:shadow-lg'>
-				<img src={logo} alt='logo' width={100} height={24} />
+				<a
+					href='#homepage'
+					onClick={(e) => handleScroll(e, 'homepage')}>
+					<img src={logo} alt='logo' width={100} height={24} />
+				</a>
 				<div className='hidden space-x6 lg:flex'>
 					{LINKS?.map((link, index) => (
 						<a

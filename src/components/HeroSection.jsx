@@ -4,7 +4,9 @@ import hero from '../assets/hero.jpeg'
 
 const HeroSection = () => {
 	return (
-		<section className='relative flex h-[65vh] md:h-screen items-center justify-center'>
+		<section
+			id='homepage'
+			className='relative flex h-[65vh] md:h-screen items-center justify-center'>
 			<div className='absolute top-8 md:top-0 inset-0 -z-20 h-full w-full overflow-hidden'>
 				<video
 					muted
