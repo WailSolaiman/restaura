@@ -1,5 +1,3 @@
-import React from 'react'
-
 import { ABOUT } from '../constants'
 import about from '../assets/about.jpeg'
 

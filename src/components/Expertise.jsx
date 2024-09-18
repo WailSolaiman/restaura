@@ -1,4 +1,3 @@
-import React from 'react'
 import { CUSINES } from '../constants'
 
 const Expertise = () => {
@@ -29,7 +28,7 @@ const Expertise = () => {
 							<p className='mt-4 text-lg md:text-2xl tracking-tighter'>
 								{cusine.description}
 							</p>
-							<p className='mt-8 text-sm'>
+							<p className='mt-8 text-sm text-neutral-500'>
 								{cusine.description2}
 							</p>
 						</div>

@@ -1,5 +1,3 @@
-import React from 'react'
-
 import missionImg from '../assets/mission.jpeg'
 import mission from '../assets/mission.mp4'
 import { MISSION } from '../constants'
