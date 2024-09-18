@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection'
 import Mission from './components/Mission'
 import Navbar from './components/Navbar'
 import Reviews from './components/Reviews'
+import Contact from './components/Contact'
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<Mission />
 			<Expertise />
 			<Reviews />
+			<Contact />
 		</main>
 	)
 }

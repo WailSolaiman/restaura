@@ -53,11 +53,19 @@ const Navbar = () => {
 						<a
 							key={index}
 							href={`#${link.targetId}`}
-							className='block p-4 uppercase tracking-tighter text-2xl italic border-b-2 border-dashed text-center'
+							className='block p-4 uppercase border-b-2 border-dotted border-neutral-700 
+                        py-6 text-center text-2xl tracking-tighter'
 							onClick={(e) => handleScroll(e, link.targetId)}>
 							{link.text}
 						</a>
 					))}
+					<img
+						src={logo}
+						alt='logo'
+						width={200}
+						height={48}
+						className='mx-auto mt-8'
+					/>
 				</div>
 			)}
 		</nav>
