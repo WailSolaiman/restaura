@@ -1,6 +1,8 @@
-import DishCard from './DishCard'
+import { motion } from 'framer-motion'
 
+import DishCard from './DishCard'
 import { DISHES } from '../constants'
+import { staggerContainer, fadeInWithStagger } from '../animation'
 
 const Dishes = () => {
 	return (
@@ -8,11 +10,18 @@ const Dishes = () => {
 			<h2 className='mb-8 text-center text-3xl tracking-tighter'>
 				Our Dishes
 			</h2>
-			<div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
+			<motion.div
+				initial='hidden'
+				whileInView='visible'
+				variants={staggerContainer(0.2)}
+				viewport={{ once: true }}
+				className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8'>
 				{DISHES.map((project, index) => (
-					<DishCard key={index} project={project} />
+					<motion.div variants={fadeInWithStagger(0.5)} key={index}>
+						<DishCard project={project} />
+					</motion.div>
 				))}
-			</div>
+			</motion.div>
 		</section>
 	)
 }

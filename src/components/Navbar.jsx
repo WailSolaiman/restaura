@@ -39,7 +39,8 @@ const Navbar = () => {
 						<a
 							key={index}
 							href={`#${link.targetId}`}
-							className={`text-sm border-r-8 border-neutral-300/20 pl-6 hover:opacity-50 transition-all`}
+							className={`text-sm border-r-8 border-neutral-300/20 pl-6 hover:opacity-50 
+								hover:border-pink-400 pr-1 transition-all`}
 							onClick={(e) => handleScroll(e, link.targetId)}>
 							{link.text}
 						</a>

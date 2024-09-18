@@ -1,4 +1,7 @@
+import { motion } from 'framer-motion'
+
 import { CUSINES } from '../constants'
+import { staggerContainer, fadeInWithStagger } from '../animation'
 
 const Expertise = () => {
 	return (
@@ -6,9 +9,15 @@ const Expertise = () => {
 			<h2 className='mt-8 text-center text-3xl tracking-tighter lg:text-4xl'>
 				Our Expertise
 			</h2>
-			<div className='container mx-auto px-4'>
+			<motion.div
+				initial='hidden'
+				whileInView='visible'
+				variants={staggerContainer(1.2)}
+				viewport={{ once: true }}
+				className='container mx-auto px-4'>
 				{CUSINES.map((cusine, index) => (
-					<div
+					<motion.div
+						variants={fadeInWithStagger(0.5)}
 						key={index}
 						className='flex flex-col md:flex-row items-center border-b-4 border-dotted border-neutral-700/40 py-8'>
 						<div className='flex-shrink-0 pr-8 text-2xl hidden md:block'>
@@ -32,9 +41,9 @@ const Expertise = () => {
 								{cusine.description2}
 							</p>
 						</div>
-					</div>
+					</motion.div>
 				))}
-			</div>
+			</motion.div>
 		</section>
 	)
 }
