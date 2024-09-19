@@ -12,7 +12,7 @@ const Expertise = () => {
 			<motion.div
 				initial='hidden'
 				whileInView='visible'
-				variants={staggerContainer(1.2)}
+				variants={staggerContainer(1.6)}
 				viewport={{ once: true }}
 				className='container mx-auto px-4'>
 				{CUSINES.map((cusine, index) => (

@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 
+import poster from '../assets/hero.jpg'
 import video from '../assets/hero.mp4'
 import logo from '../assets/logo.png'
 import { slideInFromBottom } from '../animation'
@@ -17,9 +18,11 @@ const HeroSection = () => {
 					autoPlay
 					playsInline
 					loop
-					src={video}
+					poster={poster}
 					className='col-start-1 col-span-6 row-start-1 row-span-6 
-					h-full w-full object-cover'></video>
+					h-full w-full object-cover'>
+					<source src={video} type='video/mp4' />
+				</video>
 
 				<motion.div
 					initial='hidden'

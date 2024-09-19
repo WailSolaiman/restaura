@@ -9,7 +9,7 @@ import { staggerContainer, fadeInWithStagger, fadeInOut } from '../animation'
 
 const Reviews = () => {
 	return (
-		<section id='review' className='container mx-auto mt-12'>
+		<section id='review' className='container mx-auto mt-12 px-2'>
 			<motion.div
 				initial='hidden'
 				whileInView='visible'
@@ -40,7 +40,7 @@ const Reviews = () => {
 			<motion.div
 				initial='hidden'
 				whileInView='visible'
-				variants={staggerContainer(0.6)}
+				variants={staggerContainer(0.4)}
 				viewport={{ once: true }}
 				className='mt-14 flex flex-col items-center justify-center gap-2 md:flex-row'>
 				{[customer1, customer2, customer3].map((customer, index) => (
